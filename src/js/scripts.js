@@ -90,6 +90,7 @@
       let items = document.querySelectorAll('.animate');
 
       items.forEach(item => {
+
          if (isInViewport(item)) {
             let animateMode = item.getAttribute('data-animate'),
                animateDelay = item.getAttribute('data-delay');
@@ -167,3 +168,9 @@
 
    }
 })();
+
+// let elem = getElementById('bgi');
+
+// let boun = elem.getBoundingClientRect();
+
+// console.log('boun');

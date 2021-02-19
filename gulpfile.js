@@ -70,8 +70,7 @@ gulp.task('images', function () {
 gulp.task('sass', function () {
    return gulp.src("src/scss/*.scss")
       .pipe(sourcemaps.init())
-      .pipe(sass().on('error', sass.logError))
-      // { outputStyle: "compressed" }
+      .pipe(sass({ outputStyle: "compressed" }).on('error', sass.logError))
       .pipe(autoprefixer({
          cascade: false
       }))
@@ -106,6 +105,7 @@ gulp.task('serve', gulp.series('html', 'favicon', 'sass', 'js', function () {
 
    gulp.watch("src/scss/**/*.scss", gulp.parallel('sass'));
    gulp.watch("src/js/**/*.js", gulp.parallel('js'));
+   gulp.watch("src/partials/*.html", gulp.parallel('html'));
    gulp.watch("src/*.html", gulp.parallel('html'));
 }));
 

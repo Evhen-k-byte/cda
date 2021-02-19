@@ -28,20 +28,21 @@ body {
 
 .header {
    min-height: 100vh;
-   background-image: url(../img/header-bg.jpg);
-   background-repeat: no-repeat;
-   background-position: 0 0;
-   background-size: cover;
-   background-attachment: fixed;
+   position: relative;
 
-   // &__h1 {
-   //    position: absolute;
-   //    top: 0;
-   //    left: 50%;
-   // }
-
-   @media (max-width: 578px) {
-      background-image: url(../img/header-bg-600.jpg);
+   &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      min-height: 100%;
+      width: 100%;
+      background-color: #333230;
+      background-image: url(../img/header-bg.jpg);
+      object-fit: cover;
+      z-index: -1;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
    }
 
    &__head {
@@ -704,18 +705,28 @@ body {
 }
 
 .advantages {
-   background-image: url(../img/iphone-bg.jpg);
-   background-repeat: no-repeat;
-   background-position: 0 0;
-   background-size: cover;
-   background-attachment: fixed;
    padding: 70px 0;
    overflow: hidden;
    position: relative;
 
-   @media (max-width: 578px) {
-      background-image: url(../img/iphone-bg-600.jpg);
+   &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      min-height: 100%;
+      width: 100%;
+      background-color: #333230;
+      background-image: url(../img/iphone-bg.jpg);
+      object-fit: cover;
+      z-index: -1;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
    }
+
+   // @media (max-width: 578px) {
+   //    background-image: url(../img/iphone-bg-600.jpg);
+   // }
 
    .description {
       margin-top: 100px;
@@ -919,14 +930,20 @@ body {
 }
 
 .hearing {
-   background-image: url(../img/form-bg.jpg);
-   background-position: 0 0;
-   background-repeat: no-repeat;
-   background-size: cover;
-   background-attachment: fixed;
+   position: relative;
 
-   @media (max-width: 578px) {
-      background-image: url(../img/form-bg-600.jpg);
+   &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      min-height: 100%;
+      width: 100%;
+      background-color: #333230;
+      background-image: url(../img/form-bg.jpg);
+      object-fit: cover;
+      z-index: -1;
+      background-repeat: no-repeat;
    }
 
    & .container {
