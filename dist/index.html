@@ -4,7 +4,16 @@
 <head>
    <title>Default SCSS</title>
    <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description" content="All about Creative Digital Agencies" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <meta name="robots" content="index,follow" />
+   <meta property="og:title" content="All about Creative Digital Agencies" />
+   <meta property="twitter:title" content="All about Creative Digital Agencies" />
+   <meta property="og:image" content="https://pbs.twimg.com/profile_images/1091263383414820864/hs08haS0.jpg" />
+   <meta property="og:image:width" content="1200" />
+   <meta property="og:image:height" content="630" />
+   <meta property="og:description" content="All about Creative Digital Agencies" />
+   <meta property="og:type" content="website" />
    <link rel="shortcut icon" href="favicon.png" type="image/png">
    <title>Creative Digital Agencies</title>
    <script src="https://kit.fontawesome.com/cab443aa75.js" crossorigin="anonymous"></script>
@@ -14,7 +23,7 @@
 
 <body>
 
-   <header class="header bgi-wrap">
+   <header id="home" class="header bgi-wrap">
    
       <div class="header__head flex">
          <div class="header__logo">
@@ -34,19 +43,19 @@
    
             <ul class="navigate flex scale-0">
                <li class="navigate__item">
-                  <a href="#">Home</a>
+                  <a href="#home">Home</a>
                </li>
                <li class="navigate__item">
-                  <a href="#">Pages</a>
+                  <a href="#contact">Pages</a>
                </li>
                <li class="navigate__item">
-                  <a href="#">Features</a>
+                  <a href="#we-are">Features</a>
                </li>
                <li class="navigate__item">
-                  <a href="#">Extensions</a>
+                  <a href="#team">Extensions</a>
                </li>
                <li class="navigate__item">
-                  <a href="#">Tutorials</a>
+                  <a href="#articles">Tutorials</a>
                </li>
                <li data-contact="yes" class="navigate__item">
                   <a id="contactUs" href="#">Contact us</a>
@@ -153,7 +162,7 @@
          </div>
       </section>
 
-      <section class="articles flex">
+      <section id="articles" class="articles flex">
          <article class="akita flex">
             <div class="akita__article">
                <div class="akita__date">
@@ -262,6 +271,7 @@
                      mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui.</div>
                </div>
             </div>
+            <div class="swiper-pagination"></div>
          </div>
          <div class="swiper-button-prev"></div>
          <div class="swiper-button-next"></div>
@@ -330,7 +340,7 @@
          </div>
       </section>
 
-      <section class="team">
+      <section id="team" class="team">
          <div class="container">
             <div class="heading tac">
                <div class="heading__wrap ttu">T</div>
@@ -386,12 +396,14 @@
                   </div>
                </div>
             </div>
+            <div class="swiper-pagination"></div>
          </div>
+
          <div class="swiper-button-prev"></div>
          <div class="swiper-button-next"></div>
       </section>
 
-      <section class="hearing">
+      <section id="contact" class="hearing">
          <!-- <img id="bgi" class="bgi" src="../img/form-bg.jpg" alt="Akita Inu Dog"> -->
          <!-- <picture class="bgi">
             <source srcset="../img/form-bg.jpg" media="(max-width: 600px)">
@@ -413,7 +425,7 @@
                <div class="hearing__message">
                   <textarea placeholder="Message" name="" id="" cols="30" rows="10"></textarea>
                </div>
-               <input class="submit" value="Submit" type="submit">
+               <input id="submit" class="submit" value="Submit" type="submit">
             </form>
          </div>
       </section>

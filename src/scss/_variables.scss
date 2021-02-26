@@ -24,6 +24,10 @@ $gray: #222222;
    @media (max-width: 1200px) {
       max-width: 950px;
    }
+
+   @media (max-width: 576px) {
+      padding: 30px 10px 30px 20px;
+   }
 }
 
 .tac {

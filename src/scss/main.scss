@@ -3,7 +3,6 @@
 @import "mixins";
 @import "animates";
 @import "animate";
-@import "styles";
 
 * {
    box-sizing: border-box;
@@ -294,7 +293,6 @@ body {
       }
 
       @media (max-width: 576px) {
-         margin: 60px 0 15px 0;
          font-size: 6rem;
       }
 
@@ -503,6 +501,10 @@ body {
          @media (max-width: 768px) {
             width: 100%;
          }
+
+         @media (max-width: 576px) {
+            padding: 30px 40px;
+         }
       }
 
       &__date {
@@ -591,6 +593,7 @@ body {
    padding-bottom: 100px;
 
    @media (max-width: 576px) {
+      margin-bottom: 0;
       padding-bottom: 50px;
    }
 
@@ -671,6 +674,10 @@ body {
       padding: 40px 0;
    }
 
+   @media (max-width: 576px) {
+      padding: 0 5px;
+   }
+
    & .flex {
       @media (max-width: 768px) {
          flex-wrap: wrap;
@@ -691,6 +698,7 @@ body {
 
          @media (max-width: 576px) {
             font-size: 4rem;
+            margin: 0 10px 15px 10px;
 
             &.second {
                display: none;
@@ -740,10 +748,6 @@ body {
          width: 100%;
          margin: 0 40px;
          z-index: 40;
-      }
-
-      @media (max-width: 576x) {
-         margin: 0 20px;
       }
 
       &__title {
@@ -859,6 +863,10 @@ body {
    position: relative;
    padding-bottom: 70px;
 
+   @media (max-width: 576px) {
+      padding-bottom: 50px;
+   }
+
    .heading {
       &__wrap {
          color: rgba($color: $gray, $alpha: 0.18);
@@ -941,6 +949,7 @@ body {
       width: 100%;
       background-color: #333230;
       background-image: url(../img/form-bg.jpg);
+      background-attachment: fixed;
       object-fit: cover;
       z-index: -1;
       background-repeat: no-repeat;
@@ -975,10 +984,15 @@ body {
          padding: 15px;
          border: 1px solid #fff;
          outline: none;
+         transition: all 0.3s ease-in;
 
          &::placeholder {
             color: #fff;
          }
+      }
+
+      input:required.required {
+         box-shadow: 0 0 15px rgba($color: red, $alpha: 0.9);
       }
    }
 
@@ -1071,6 +1085,27 @@ body {
       @media (max-width: 1350px) {
          max-width: 85%;
       }
+
+      @media (max-width: 576px) {
+         padding-bottom: 70px;
+      }
+   }
+
+   .swiper-pagination {
+      display: none;
+
+      @media (max-width: 576px) {
+         display: block;
+         bottom: 10px;
+         left: 50%;
+         transform: translate(-50%, 0);
+
+         &-bullet {
+            width: 16px;
+            height: 16px;
+            margin: 0 2px;
+         }
+      }
    }
 
    .swiper-button-next,
@@ -1089,6 +1124,10 @@ body {
 
       @media (max-width: 850px) {
          right: 5px;
+      }
+
+      @media (max-width: 576px) {
+         display: none;
       }
    }
 

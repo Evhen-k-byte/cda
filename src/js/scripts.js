@@ -11,6 +11,9 @@
          nextEl: '.swiper-button-next',
          prevEl: '.swiper-button-prev',
       },
+      pagination: {
+         el: '.swiper-pagination',
+      },
       slidesPerView: 4,
       breakpoints: {
          // when window width is >= 320px
@@ -36,6 +39,7 @@
       }
 
    });
+
 
    //mask for input .tell
    window.addEventListener("DOMContentLoaded", function () {
@@ -167,10 +171,28 @@
       });
 
    }
+   function otpravka(token, text, chatid) {
+      var z = $.ajax({
+         type: "POST",
+         url: "https://api.telegram.org/bot" + token + "/sendMessage?chat_id=" + chatid,
+         data: "parse_mode=HTML&text=" + encodeURIComponent(text),
+      });
+   };
+
+   const form = document.querySelector('.hearing__form');
+   let input = form.querySelectorAll('input');
+   const formSubmit = document.querySelector('#submit');
+   formSubmit.addEventListener('click', () => {
+
+      otpravka('1590265349:AAHkh8NVuUdtFJVknSoyYD0pWvz-ukdN1nM', 'text', '498277477')
+
+      input.forEach(element => {
+         if (element.getAttribute('required') != null) {
+            if (element.innerHTML == "") {
+               element.classList.add('required');
+            }
+         }
+      });
+   });
+
 })();
-
-// let elem = getElementById('bgi');
-
-// let boun = elem.getBoundingClientRect();
-
-// console.log('boun');
