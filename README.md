@@ -16,7 +16,7 @@ Gulp and plugins.
 ### Contact:
 <a href="mailto:yevhen.kurian@gmail.com">Ask questions by email</a>
 ---
-<a href="www.linkedin.com/in/evhen-k-byte">I'm on linkedin</a>
+[I'm on linkedin](https://www.linkedin.com/in/evhen-k-byte/)
 ---
 Лендинг - то, с чего начинает каждый front-end разработчик.
 ---
@@ -33,4 +33,4 @@ Gulp and plugins.
 ### Контакты:
 <a href="mailto:yevhen.kurian@gmail.com">Задавайте вопросы по электронной почте</a>
 ---
-<a href="www.linkedin.com/in/evhen-k-byte">Я на linkedin</a>
+[Я на linkedin](https://www.linkedin.com/in/evhen-k-byte/)
