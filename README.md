@@ -13,8 +13,8 @@ Swiper,
 Customized Google Maps,
 Gulp and plugins.
 ---
-###Contact:
-<a href="yevhen.kurian@gmail.com">Ask questions by email</a>
+### Contact:
+<a href="mailto:yevhen.kurian@gmail.com">Ask questions by email</a>
 ---
 [I'm on linkedin](www.linkedin.com/in/evhen-k-byte)
 ---
@@ -31,6 +31,6 @@ Swiper,
 Customized Google Maps,
 Gulp and plugins.
 ### Контакты:
-<a href="yevhen.kurian@gmail.com">Задавайте вопросы по электронной почте</a>
+<a href="mailto:yevhen.kurian@gmail.com">Задавайте вопросы по электронной почте</a>
 ---
 [Я на linkedin](www.linkedin.com/in/evhen-k-byte)
