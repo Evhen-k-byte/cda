@@ -6,17 +6,17 @@ My example of a landing page, with a well-thought-out structure and stylish desi
 ---
 ## Used technologies:
 ---
-HTML5;
-SaaS;
-Pure js;
-Swiper;
-Customized Google Maps;
+HTML5,
+SaaS,
+Pure js,
+Swiper,
+Customized Google Maps,
 Gulp and plugins.
 ---
-### Контакты:
-<a href="yevhen.kurian@gmail.com">Задавайте вопросы по электронной почте</a>
+###Contact:
+<a href="yevhen.kurian@gmail.com">Ask questions by email</a>
 ---
-[Я на linkedin](www.linkedin.com/in/evhen-k-byte)
+[I'm on linkedin](www.linkedin.com/in/evhen-k-byte)
 ---
 Лендинг - то, с чего начинает каждый front-end разработчик.
 ---
@@ -24,13 +24,13 @@ Gulp and plugins.
 ---
 ## Использованые технологии:
 ---
-HTML5;
-SaaS;
-Pure js;
-Swiper;
-Customized Google Maps;
+HTML5,
+SaaS,
+Pure js,
+Swiper,
+Customized Google Maps,
 Gulp and plugins.
 ### Контакты:
-<a href="yevhen.kurian@gmail.com">Ask questions by email</a>
+<a href="yevhen.kurian@gmail.com">Задавайте вопросы по электронной почте</a>
 ---
-[I'm on linkedin](www.linkedin.com/in/evhen-k-byte)
+[Я на linkedin](www.linkedin.com/in/evhen-k-byte)
